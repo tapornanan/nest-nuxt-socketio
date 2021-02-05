@@ -5,21 +5,15 @@ A starter project with NestJS + Nuxt.js
 ## Installation
 
 ```bash
-$ npm install
+$ yarn
 ```
 
 ## Running the app
 
 ```bash
-# both Nest as Nuxt as one locally
-$ npm run dev
+# Run Nuxt
+$ yarn dev:client
 
-# run only Nuxt
-$ npm run dev:client
+# Run Nest
+$ yarn dev:server
 
-# run only Nest
-$ npm run dev:server
-
-# build (tested with aws elastic beanstalk)
-$ npm run build
-```
