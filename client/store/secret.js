@@ -3,7 +3,7 @@ export const state = () => ({
 })
   
 export const mutations = {
-    SOCKET_SECRET(state, payload) {
+    SOCKET_SECRET_MESSAGE(state, payload) {
         state.secretMessage = payload
     }
 }

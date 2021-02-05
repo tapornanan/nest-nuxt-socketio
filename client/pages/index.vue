@@ -37,9 +37,9 @@ export default {
     ...mapState({
       feeds: state => state.feeds,
       // This work
-      // secretMessage: state => state.secretMessage,
-
       secretMessage: state => state.secret.secretMessage,
+
+      // secretMessage: state => state.secret.secretMessage,
     })
   }
 }

@@ -11,6 +11,7 @@ export class GatewayService {
   }
 
   $onPushSecretMessage() {
+    console.log("current rooms", this.rooms);
     this.rooms.forEach((room) => {
       this.socket
         .in(room)
