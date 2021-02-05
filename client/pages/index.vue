@@ -7,6 +7,7 @@
     <div class="room-message">
       {{ secretMessage }}
     </div>
+    <button type="button" @click="onTestSecretStore"> Test secret store</button>
     <br>
     <br>
     <h4>This is the global event from server</h4>
@@ -27,12 +28,18 @@ export default {
     onJoinRoom() {
       this.$store.dispatch('joinRoom', this.roomName)
       this.roomName = null;
+    },
+    onTestSecretStore() {
+      this.$store.dispatch('secret/testAction')
     }
   },
   computed: {
     ...mapState({
       feeds: state => state.feeds,
-      secretMessage: state => state.secretMessage,
+      // This work
+      // secretMessage: state => state.secretMessage,
+
+      secretMessage: state => state.secret.secretMessage,
     })
   }
 }
